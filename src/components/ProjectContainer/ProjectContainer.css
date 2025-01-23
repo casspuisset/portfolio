@@ -5,6 +5,7 @@
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   cursor: pointer;
+  border-radius: 25px;
 }
 
 .project:hover {

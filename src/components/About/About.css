@@ -16,11 +16,24 @@
   max-width: 600px;
 }
 
-.about__desc,
-.about__contact {
-  margin-top: 2.4em;
+.about__presentation {
+  display: flex;
+  gap: 2em;
 }
 
+.about__presentation,
+.about__contact
+ {
+  margin-top: 2.4em;
+}
+.about__desc {
+  align-content: center;
+}
+.about__picture {
+  border-radius: 25px;
+  border: solid 0.5em var(--clr-primary);;
+
+}
 .about .link--icon {
   margin-right: 0.8em;
 }
