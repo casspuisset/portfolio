@@ -1,6 +1,5 @@
 .about {
   flex-direction: column;
-  margin-top: 3em;
 }
 
 .about__name {
@@ -17,7 +16,6 @@
 }
 
 .about__presentation {
-  display: flex;
   gap: 2em;
 }
 
@@ -25,14 +23,17 @@
 .about__contact
  {
   margin-top: 2.4em;
+  display: flex;
 }
+
 .about__desc {
   align-content: center;
 }
 .about__picture {
   border-radius: 25px;
   border: solid 0.5em var(--clr-primary);;
-
+  height: fit-content;
+  max-width:max-content;
 }
 .about .link--icon {
   margin-right: 0.8em;
@@ -44,7 +45,14 @@
 
 @media (max-width: 600px) {
   .app .about {
-    align-items: flex-start;
+    align-items: center;
     margin-top: 2em;
+  }
+  .title {
+    text-align: center;
+  }
+  .about__presentation {
+    flex-direction: column;
+    align-items: center;
   }
 }

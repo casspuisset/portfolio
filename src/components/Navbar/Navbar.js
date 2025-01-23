@@ -54,6 +54,16 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
+
+        <li className='nav__list-item'>
+          <a
+            href='#parcours'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            Parcours
+          </a>
+        </li>
       </ul>
 
       <button
