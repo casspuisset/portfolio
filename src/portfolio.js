@@ -37,7 +37,7 @@ const projects = [
   {
     name: 'Nina Carducci',
     description:
-      'Débogage et optimisation du site de la photographe Nina Carducci',
+      'Débogage et optimisation du site de la photographe Nina Carducci, amélioration du référencement SEO',
     stack: ['HTML', 'CSS', 'Javascript'],
     sourceCode: 'https://github.com/casspuisset/nina_carducci',
     livePreview: 'https://casspuisset.github.io/nina_carducci/',
