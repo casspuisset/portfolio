@@ -65,7 +65,7 @@ export default function ProjectContainer({ project }) {
 
       {!showDescription && (
         <button type='button' className='project__button' onClick={showMore}>
-          Afficher plus
+          <i className='fa-solid fa-chevron-down' />
         </button>
       )}
       {showDescription && (
@@ -73,7 +73,7 @@ export default function ProjectContainer({ project }) {
           {' '}
           <p> Description</p>
           <button type='button' className='project__button' onClick={showLess}>
-            Afficher moins
+            <i className='fa-solid fa-chevron-up' />{' '}
           </button>
         </div>
       )}
