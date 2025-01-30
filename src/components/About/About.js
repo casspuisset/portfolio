@@ -1,6 +1,6 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import { about } from '../../portfolio'
-import profilPicture from '../../ressources/images/17170144657206_photo.png'
+import profilPicture from '../../ressources/images/profil_picture.png'
 import './About.css'
 
 const About = () => {

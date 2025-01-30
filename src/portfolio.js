@@ -26,6 +26,7 @@ const projects = [
     stack: ['HTML', 'SASS', 'Javascript', 'React', 'MongoDB'],
     sourceCode: 'https://github.com/casspuisset/mon_vieux_grimoire',
     livePreview: 'https://github.com/casspuisset/mon_vieux_grimoire',
+    image: './ressources/images/mon_vieux_grimoire.png',
   },
   {
     name: 'Kasa',
@@ -76,7 +77,7 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: '',
+  email: 'cpuisset98@gmail.com',
 }
 
 export { header, about, projects, skills, contact }
