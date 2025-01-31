@@ -2,17 +2,10 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import { about } from '../../portfolio'
 import profilPicture from '../../ressources/images/profil_picture.png'
 import './About.css'
-import '../../ressources/others/cv.pdf'
+import url from '../../ressources/others/cv.pdf'
 
 export default function About() {
   const { name, role, description, resume, social } = about
-  const url = '../../ressources/others/cv.pdf'
-  const download = () => {
-    const link = document.createElement('a')
-    link.href = url
-    link.download = 'cv_puisset.pdf'
-    link.dispatchEvent(new MouseEvent('click'))
-  }
 
   return (
     <div className='about center'>
@@ -32,17 +25,15 @@ export default function About() {
       </div>
 
       <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <button
-              type='button'
-              className='btn btn--outline'
-              onClick={download}
-            >
-              Télécharger le CV
-            </button>
-          </a>
-        )}
+        <a
+          href={url}
+          target='_blank'
+          rel='noreferrer'
+          type='button'
+          className='btn btn--outline'
+        >
+          Télécharger le CV
+        </a>
 
         {social && (
           <>

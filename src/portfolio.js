@@ -10,7 +10,6 @@ const about = {
   role: 'Développeur Front End',
   description:
     "En plein parcours de reconversion professionnelle, j'achève ma première année d'alternance en tant que développeur Web et cherche de nouveaux projets. Maîtrisant à la fois Angular et React, spécialisé Frontend, je cherche activement à me former au Java pour parfaire mon éventail de compétences",
-  resume: 'https://example.com',
   social: {
     github: 'https://github.com/casspuisset',
   },

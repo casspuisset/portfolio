@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
@@ -6,6 +6,7 @@ import './ProjectContainer.css'
 import Modal from '../Modal/Modal'
 
 export default function ProjectContainer({ project }) {
+  const ref = useRef()
   const [modal, setModal] = useState(false)
   const [showDescription, setDescription] = useState(false)
   const projectStyle = {
@@ -20,15 +21,24 @@ export default function ProjectContainer({ project }) {
     setDescription(false)
   }
   return (
-    <div className='project' style={projectStyle}>
+    <button
+      type='button'
+      className='project'
+      style={projectStyle}
+      // onClick={() => ref.current.showModal()}
+    >
       <h3>{project.name}</h3>
       <div>
-        <button type='button' onClick={() => setModal(true)}>
-          Open modal
-        </button>
-        <Modal openModal={modal} closeModal={() => setModal(false)}>
+        {/* <Modal openModal={modal} closeModal={() => setModal(false)}>
           Modal content.
-        </Modal>
+        </Modal> */}
+        {/* 
+        <dialog ref={ref}>
+          <p>test</p>
+          <button type='button'>
+            <i className='fa-solid fa-xmark' />{' '}
+          </button>
+        </dialog> */}
       </div>
 
       <p className='project__description'>{project.description}</p>
@@ -62,21 +72,30 @@ export default function ProjectContainer({ project }) {
           </a>
         )}
       </div>
-
-      {!showDescription && (
-        <button type='button' className='project__button' onClick={showMore}>
-          <i className='fa-solid fa-chevron-down' />
-        </button>
-      )}
-      {showDescription && (
-        <div>
-          {' '}
-          <p> Description</p>
-          <button type='button' className='project__button' onClick={showLess}>
-            <i className='fa-solid fa-chevron-up' />{' '}
+      <div>
+        {!showDescription && (
+          <button type='button' className='project__button' onClick={showMore}>
+            <i className='fa-solid fa-chevron-down' />
           </button>
-        </div>
-      )}
-    </div>
+        )}
+        {showDescription && (
+          <div>
+            {' '}
+            <p> Description</p>
+            <details>
+              <summary>Details</summary>
+              Something small enough to escape casual notice.
+            </details>
+            <button
+              type='button'
+              className='project__button'
+              onClick={showLess}
+            >
+              <i className='fa-solid fa-chevron-up' />{' '}
+            </button>
+          </div>
+        )}
+      </div>
+    </button>
   )
 }
