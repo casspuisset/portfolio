@@ -30,79 +30,65 @@ function Timeline() {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className='vertical-timeline-element--work'
-          date='2010 - 2011'
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          className='vertical-timeline-element--education'
+          date="Mars 2024 - Aujourd'hui"
+          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         >
-          <h3 className='vertical-timeline-element-title'>Art Director</h3>
+          <h3 className='vertical-timeline-element-title'>
+            Formation Développeur Web
+          </h3>
           <h4 className='vertical-timeline-element-subtitle'>
-            San Francisco, CA
+            Niveau 5 (Bac +2)
           </h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            Formation réalisée à distance et en alternance avec Openclassrooms
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className='vertical-timeline-element--work'
-          date='2008 - 2010'
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        >
-          <h3 className='vertical-timeline-element-title'>Web Designer</h3>
-          <h4 className='vertical-timeline-element-subtitle'>
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className='vertical-timeline-element--work'
-          date='2006 - 2008'
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        >
-          <h3 className='vertical-timeline-element-title'>Web Designer</h3>
-          <h4 className='vertical-timeline-element-subtitle'>
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
           className='vertical-timeline-element--education'
-          date='April 2013'
+          date='2018-2020'
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         >
           <h3 className='vertical-timeline-element-title'>
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className='vertical-timeline-element-subtitle'>Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className='vertical-timeline-element--education'
-          date='November 2012'
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        >
-          <h3 className='vertical-timeline-element-title'>
-            Agile Development Scrum Master
-          </h3>
-          <h4 className='vertical-timeline-element-subtitle'>Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className='vertical-timeline-element--education'
-          date='2002 - 2006'
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        >
-          <h3 className='vertical-timeline-element-title'>
-            Bachelor of Science in Interactive Digital Media Visual Imaging
+            Master d&rsquo;Histoire
           </h3>
           <h4 className='vertical-timeline-element-subtitle'>
-            Bachelor Degree
+            Niveau 7(Bac +5)
           </h4>
-          <p>Creative Direction, Visual Design</p>
+          <p>
+            Master en histoire ancienne réalisé à l&rsquo;Université Bordeaux
+            Montaigne
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className='vertical-timeline-element--education'
+          date='2015 - 2018'
+          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        >
+          <h3 className='vertical-timeline-element-title'>
+            Licence d&rsquo;Histoire
+          </h3>
+          <h4 className='vertical-timeline-element-subtitle'>
+            Niveau 6 (Bac +3)
+          </h4>
+          <p>
+            Licence d&rsquo;histoire réalisé à l&rsquo;Université Bordeaux
+            Montaigne
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className='vertical-timeline-element--education'
+          date='2015'
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-        />
+        >
+          <h3 className='vertical-timeline-element-title'>
+            Baccalauréat scientifique
+          </h3>
+          <h4 className='vertical-timeline-element-subtitle'>
+            Spécialité Informatique et Sciences du Numérique
+          </h4>
+          <p>Bac général scientifique mention ISN réalisé</p>
+        </VerticalTimelineElement>
       </VerticalTimeline>
     </section>
   )

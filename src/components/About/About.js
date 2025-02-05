@@ -1,9 +1,10 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import { about } from '../../portfolio'
-import profilPicture from '../../ressources/images/17170144657206_photo.png'
+import profilPicture from '../../ressources/images/profil_picture.png'
 import './About.css'
+import url from '../../ressources/others/cv.pdf'
 
-const About = () => {
+export default function About() {
   const { name, role, description, resume, social } = about
 
   return (
@@ -24,13 +25,15 @@ const About = () => {
       </div>
 
       <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Il y aura un lien vers le CV ici
-            </span>
-          </a>
-        )}
+        <a
+          href={url}
+          target='_blank'
+          rel='noreferrer'
+          type='button'
+          className='btn btn--outline'
+        >
+          Télécharger le CV
+        </a>
 
         {social && (
           <>
@@ -49,5 +52,3 @@ const About = () => {
     </div>
   )
 }
-
-export default About
