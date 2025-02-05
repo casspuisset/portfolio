@@ -24,15 +24,16 @@ const projects = [
       "Backend (serveur et DB) d'un site de partage et de notation de livres",
     stack: ['HTML', 'SASS', 'Javascript', 'React', 'MongoDB'],
     sourceCode: 'https://github.com/casspuisset/mon_vieux_grimoire',
-    livePreview: 'https://github.com/casspuisset/mon_vieux_grimoire',
-    image: './ressources/images/mon_vieux_grimoire.png',
+    livePreview: '',
+    image: '/images/mon_vieux_grimoire_desktop.png',
   },
   {
     name: 'Kasa',
     description: 'Application React complète de location immobilière',
     stack: ['HTML', 'SASS', 'React'],
     sourceCode: 'https://github.com/casspuisset/kasa',
-    livePreview: 'https://github.com/casspuisset/kasa',
+    livePreview: '',
+    image: 'images/kasa_desktop.png',
   },
   {
     name: 'Nina Carducci',
@@ -41,6 +42,7 @@ const projects = [
     stack: ['HTML', 'CSS', 'Javascript'],
     sourceCode: 'https://github.com/casspuisset/nina_carducci',
     livePreview: 'https://casspuisset.github.io/nina_carducci/',
+    image: 'images/nina_carducci_desktop.png',
   },
   {
     name: 'Sophie Bluel',
@@ -48,14 +50,16 @@ const projects = [
       "Frontend dynamique pour le site de l'architecte d'ntérieur Sophie Bluel",
     stack: ['HTML', 'CSS', 'Javascript'],
     sourceCode: 'https://github.com/casspuisset/sophie_bluel',
-    livePreview: 'https://github.com/casspuisset/sophie_bluel',
+    livePreview: '',
+    image: 'images/sophie_bluel_desktop.png',
   },
   {
     name: 'Booky',
     description: "Frontend d'un site location de immobilière",
     stack: ['HTML', 'CSS'],
     sourceCode: 'https://github.com/casspuisset/Booky',
-    livePreview: 'https://github.com/casspuisset/Booky',
+    livePreview: '',
+    image: '/images/booky_desktop.png',
   },
 ]
 
