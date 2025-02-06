@@ -5,7 +5,7 @@ import './About.css'
 import url from '../../ressources/others/cv.pdf'
 
 export default function About() {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, social } = about
 
   return (
     <div className='about center'>
