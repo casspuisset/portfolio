@@ -9,7 +9,7 @@
 }
 
 .filter {
-  box-shadow: inset 0px 0px 50px 50px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 50px 25px rgba(0, 0, 0, 0.5);
 }
 
 .filter,
@@ -24,7 +24,6 @@
   border-radius: 25px;
   padding: 0.2em;
   background-color: var(--clr-fg-alt);
-
 }
 
 .project:hover {
@@ -37,7 +36,6 @@
   border-radius: 25px;
   padding: 0.2em 1.5em;
   backdrop-filter: blur(0.2em);
-
 }
 
 .project__stack {
@@ -56,31 +54,67 @@
   background-color: var(--clr-fg-alt);
 }
 
-.project .link--icon {
-  margin-left: 0.5em;
-}
-
 dialog {
   width: 50%;
-  height: 60%;
+  max-height: 70%;
   overflow: hidden;
-  margin: auto!important;
-
-  /* display: none; */
-  overflow: hidden;
-  
+  margin: auto !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.project__title {
+  padding: 1em 0;
 }
 
-.fa-xmark{
+.project__sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.modale__right {
+  text-align: justify;
+}
+
+details {
+  padding: 2em;
+}
+
+.project__ModalText {
+  padding: 0 1em;
+}
+
+.project__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.fa-xmark {
   font-size: 2em;
 }
 
 .project__image {
-  height: inherit;
+  max-height: 400px;
+  width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   dialog {
     width: auto;
+    margin: 10em;
+  }
+  .project__sections {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .project__ModalText {
+    padding: 1em;
   }
 }

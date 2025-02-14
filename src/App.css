@@ -44,6 +44,11 @@ main {
 .center {
   display: flex;
   align-items: center;
+  padding: 0 5em;
+}
+
+.fa-xmark {
+  padding: 0 0 0.3em 0;
 }
 
 .link {
@@ -52,7 +57,8 @@ main {
   position: relative;
 }
 
-.link:hover {
+.link:hover,
+.fa-xmark:hover {
   color: var(--clr-primary);
 }
 
@@ -68,7 +74,9 @@ main {
 }
 
 .link:hover::before,
-.link:focus::before {
+.link:focus::before,
+.fa-xmark:hover,
+.fa-xmark::before {
   width: 100%;
 }
 
@@ -148,5 +156,8 @@ main {
 @media (max-width: 600px) {
   main {
     gap: 4em;
+  }
+  .center {
+    padding: 0 1em;
   }
 }

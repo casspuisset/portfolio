@@ -36,13 +36,35 @@ export default function ProjectContainer({ project }) {
       </button>
       {
         <dialog ref={ref} className='project'>
-          <h2>{project.name}</h2>
-          <img src={project.image} alt='' className='project__image desktop' />
-          <p>test</p>
-          <details>
-            <summary>Details</summary>
-            Something small enough to escape casual notice.
-          </details>
+          <h2 className='project__title'>{project.name}</h2>
+          <div className='project__sections'>
+            <section className='modale__left'>
+              <img
+                src={project.image}
+                alt=''
+                className='project__image desktop'
+              />
+            </section>
+            <section className='modale__right'>
+              <p className='project__ModalText'>{project.resume}</p>
+              <details>
+                <summary>Details</summary>
+                {project.details}
+              </details>
+              {project.stack && (
+                <ul className='project__stack'>
+                  {project.stack.map((item) => (
+                    <li
+                      key={uniqid()}
+                      className='skills__list-item btn btn--plain'
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>{' '}
+          </div>
           <div className='project__links'>
             {project.sourceCode && (
               <a
@@ -63,10 +85,10 @@ export default function ProjectContainer({ project }) {
                 <LaunchIcon />
               </a>
             )}
+            <button type='button' onClick={() => ref.current.close()}>
+              <i className='fa-solid fa-xmark' />
+            </button>
           </div>{' '}
-          <button type='button' onClick={() => ref.current.close()}>
-            <i className='fa-solid fa-xmark' />
-          </button>
         </dialog>
       }{' '}
     </>
