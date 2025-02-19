@@ -21,21 +21,13 @@ export default function ProjectContainer({ project }) {
         style={projectStyle}
         onClick={() => ref.current.showModal()}
       >
-        <h3>{project.name}</h3>
-        <p className='project__description'>{project.description}</p>
-        {project.stack && (
-          <ul className='project__stack'>
-            {project.stack.map((item) => (
-              <li key={uniqid()} className='project__stack-item'>
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
-        {/* Modale de présentation */}
+        <div className='project__text'>
+          <h3 className='project__name'>{project.name}</h3>
+          <p className='project__description'>{project.description}</p>
+        </div>
       </button>
       {
-        <dialog ref={ref} className='project'>
+        <dialog ref={ref} className='project__modale'>
           <h2 className='project__title'>{project.name}</h2>
           <div className='project__sections'>
             <section className='modale__left'>
@@ -44,13 +36,6 @@ export default function ProjectContainer({ project }) {
                 alt=''
                 className='project__image desktop'
               />
-            </section>
-            <section className='modale__right'>
-              <p className='project__ModalText'>{project.resume}</p>
-              <details>
-                <summary>Details</summary>
-                {project.details}
-              </details>
               {project.stack && (
                 <ul className='project__stack'>
                   {project.stack.map((item) => (
@@ -62,7 +47,14 @@ export default function ProjectContainer({ project }) {
                     </li>
                   ))}
                 </ul>
-              )}
+              )}{' '}
+            </section>
+            <section className='modale__right'>
+              <p className='project__ModalText'>{project.resume}</p>
+              <details>
+                <summary>Details</summary>
+                {project.details}
+              </details>
             </section>{' '}
           </div>
           <div className='project__links'>
