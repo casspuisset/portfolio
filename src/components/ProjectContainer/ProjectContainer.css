@@ -9,19 +9,19 @@
   height: 368px;
 }
 
-.project:hover {
-  filter: brightness(1.3);
-}
+/* .project:hover {
+  filter: brightness(0.7);
+} */
 
 .filter:hover {
-  box-shadow: inset 0px 0px 50px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 50px 200px rgba(0, 0, 0, 0.75);
 }
 
 .filter,
 .project__name {
   background-color: transparent;
   text-shadow: 1px 1px 2px black;
-  color: var(--clr-bg-alt);
+  color: white;
 }
 
 .project__name {
@@ -71,7 +71,6 @@
 }
 
 dialog {
-  padding: 1em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
@@ -98,11 +97,15 @@ dialog {
   align-items: start;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 550px;
+  max-height: 450px;
 }
 
 .modale__right {
   text-align: justify;
+}
+
+.modale__left {
+  padding: 2em 0 0 2em;
 }
 
 details {
@@ -110,7 +113,7 @@ details {
 }
 
 .project__ModalText {
-  padding: 0 1em;
+  padding: 2em;
 }
 
 .project__links {
@@ -136,7 +139,6 @@ details {
 @media (max-width: 768px) {
   dialog {
     width: auto;
-    margin: 10em;
   }
   .project__sections {
     flex-direction: column;
@@ -144,5 +146,9 @@ details {
   }
   .project__ModalText {
     padding: 1em;
+  }
+
+  .project__links {
+    bottom: 0em;
   }
 }
