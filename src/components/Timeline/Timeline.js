@@ -15,11 +15,44 @@ function Timeline() {
           className='vertical-timeline-element--work'
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="Mars 2024 - Aujourd'hui"
+          date='2025-2026'
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
           <h3 className='vertical-timeline-element-title'>
-            Alternance Développeur Web
+            Alternance Développeuse d&rsquo;application fullstack
+          </h3>
+          <h4 className='vertical-timeline-element-subtitle'>
+            Technicentre Industriel SNCF, Saint-Pierre-des-Corps
+          </h4>
+          <p>
+            Développement d&rsquo;applications pour les chaînes de production au
+            sein du Pôle Méthode. Travail sur Angular et PostgreSQL
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className='vertical-timeline-element--education'
+          date='2025-2026'
+          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        >
+          <h3 className='vertical-timeline-element-title'>
+            Formation Développeuse d&rsquo;application fullstack Java Angular
+          </h3>
+          <h4 className='vertical-timeline-element-subtitle'>
+            Niveau 7 (Bac +5)
+          </h4>
+          <p>
+            Formation réalisée à distance et en alternance avec Openclassrooms
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className='vertical-timeline-element--work'
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+          date='2024-2025'
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        >
+          <h3 className='vertical-timeline-element-title'>
+            Alternance Développeuse Web
           </h3>
           <h4 className='vertical-timeline-element-subtitle'>
             Technicentre Industriel SNCF, Saint-Pierre-des-Corps
@@ -31,11 +64,11 @@ function Timeline() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className='vertical-timeline-element--education'
-          date="Mars 2024 - Aujourd'hui"
+          date='2024-2025'
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         >
           <h3 className='vertical-timeline-element-title'>
-            Formation Développeur Web
+            Formation Développeuse Web
           </h3>
           <h4 className='vertical-timeline-element-subtitle'>
             Niveau 5 (Bac +2)
