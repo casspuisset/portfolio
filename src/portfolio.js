@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Cassandre Puisset',
-  role: 'Développeur Front End',
+  role: 'Développeuse Full-Stack Java/Angular',
   description:
     "Après deux années de reconversion en tant que développeuse au sein de la SNCF, je suis à la recherche d'un nouveau poste dans lequel participer à des projets dans lesquels investir mes compétences tout en continuant à progresser. Je suis une habituée du framework Angular et ai acquis de solides compétences en Java au cours de ma formation.",
   social: {
